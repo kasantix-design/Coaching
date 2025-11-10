@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TANGAN</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://min30327.github.io/luxy.js/dist/js/luxy.js"></script>
+</head>
+<body class="body">
+  <div id="luxy" class="main_container pt-4vw">
+    <!-- Cursor -->
+    <div class="cursor_wrapper">
+      <div class="cursor">
+        <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M7.008 0C6.24 0 5.472 0.587154 5.472 1.46789...Z" fill="#F5F5F5"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Page Transition -->
+    <div class="page_transition">
+      <div class="mask_container_text_transition">
+        <div class="transition_text_in_01 footer_energie">TAN</div>
+      </div>
+      <div class="mask_container_text_transition">
+        <div class="transition_text_in_02 footer_energie">GAN</div>
+      </div>
+      <div class="black_overlay_in"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <header class="menu">
+      <div class="menu_container">
+        <a href="/" class="brand_container">
+          <div class="text_brand">TAN</div>
+          <div class="text_brand">GAN</div>
+        </a>
+        <nav class="nav-menu">
+          <div class="content_nav_mobile">
+            <div class="container_nav_link"><a class="nav_link_2" href="/reflexologie-plantaire">REFLEXOLOGIE</a></div>
+            <div class="container_nav_link"><a class="nav_link_2" href="/massage-abhyanga">MASSAGE</a></div>
+            <div class="container_nav_link"><a class="nav_link_2" href="/physioscan">PHYSIOSCAN</a></div>
+            <div class="container_nav_link"><a class="nav_link_2" href="/contact">CONTACT</a></div>
+          </div>
+        </nav>
+        <div class="menu-button">
+          <div class="ic_burger_line top_line"></div>
+          <div class="ic_burger_line bottom_line"></div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <script>
+    var isMobile = /iPhone|iPad|Android/i.test(navigator.userAgent);
+    if (!isMobile) {
+      luxy.init({
+        wrapper: '#luxy',
+        wrapperSpeed: 0.065,
+      });
+    }
+  </script>
+</body>
+</html>
