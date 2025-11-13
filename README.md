@@ -1,35 +1,31 @@
-# VARIASJON 🌿  
-**Tidsskrift & Coaching for nevrovarierte**
+# VARIASJON – Coaching og Tidsskrift for Nevrovarierte  
+Et lettlest tidsskrift og coachingplattform for nevrodivergente – bygget i ren HTML/CSS og hostet på Netlify.
 
-Dette prosjektet er frontend og struktur for nettstedet **VARIASJON**, et inkluderende tidsskrift og coachingplattform for nevrodivergente.  
-Prosjektet er bygget for å kunne utvides med Supabase, Vipps og Jitsi Meet.
+Dette prosjektet inneholder:
+
+- ✓ Forside (tidsskrift)
+- ✓ Utgaver-side
+- ✓ Om oss
+- ✓ Kontakt
+- ✓ Podcaster
+- ✓ Coaching-oversikt
+- ✓ Coach-profiler (Mai · Reidun)
+- ✓ Coachingdashboards med Vipps-knapper og Jitsi-videorom
+- ✓ Klar for Supabase backend
+- ✓ Mobiltilpasset og SEO-optimalisert
 
 ---
 
-## 🚀 Deploy
+## 🚀 Teknologier
+- **Frontend:** HTML5, CSS3 (uten JS avhengighet)
+- **Backend (senere):** Supabase
+- **Betaling:** Vipps (QR / Vipps Checkout)
+- **Videochat:** Jitsi Meet (rom per coach)
+- **Deploy:** Netlify
+- **Repo:** GitHub
 
-### 1. GitHub
-Last opp hele denne mappen som `Variasjon-main`.
+---
 
-### 2. Netlify
-- Opprett ny Netlify-side
-- Koble til GitHub-repo
-- Deploy branch `main`
-- Netlify oppdager automatisk `index.html`
+## 📁 Mappestruktur
 
-### 3. Supabase
-- Opprett Supabase-prosjekt  
-- Legg inn nøkler i `.env` (kopier `.env.example`)
-- Sett opp tabeller for brukere og coacher  
-- (Eksempel: `coaches`, `clients`, `appointments`)
 
-### 4. Vipps
-- Opprett testkonto på [https://portal.vipps.no](https://portal.vipps.no)
-- Legg inn API-nøkler i `.env`
-- Vipps-knapper bruker `fetch('/api/vipps')`-endpoint (dummy nå)
-
-### 5. Jitsi Meet
-- Klienten åpner nye møter i nytt vindu  
-  Eksempel:  
-  ```html
-  <a href="https://meet.jit.si/coach-room-reidun" target="_blank">Start samtale med Reidun</a>
