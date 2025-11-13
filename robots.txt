@@ -1,1 +1,28 @@
+User-agent: *
+# Tillat søkemotorer å indeksere alle offentlige sider
+Allow: /
+
+# Men blokker sider som ikke skal indekseres
+Disallow: /login.html
+Disallow: /dashboard.html
+Disallow: /jitsi/
+Disallow: /assets/private/
+Disallow: /supabase/
+Disallow: /api/
+Disallow: /admin/
+
+# Blokker midlertidige eller duplikatsider
+Disallow: /*?*
+Disallow: /*#*
+Disallow: /*.tmp$
+Disallow: /*backup$
+Disallow: /*draft*
+
+# Nettsteder som ligger i repo men ikke skal søkes på
+Disallow: /README.md
+Disallow: /LICENSE
+Disallow: /node_modules/
+
+# Viktig: vis Google hvor sitemap ligger
+Sitemap: https://dittdomene.no/sitemap.xml
 
